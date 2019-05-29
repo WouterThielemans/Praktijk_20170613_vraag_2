@@ -85,7 +85,6 @@ public class Graph {
     }
 
     public boolean isPad(List<Integer> pad){
-        boolean result = true;
 
         if(pad.size() > 1){
             for(int i = 0; i< pad.size()-1; i++){
@@ -93,7 +92,7 @@ public class Graph {
                 if(!verbindingsMatrix[pad.get(i)-1][pad.get(i+1)-1]) return false;
             }
         }else return false;
-        return result;
+        return true;
     }
 
 
